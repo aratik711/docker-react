@@ -9,6 +9,6 @@ RUN npm cache clean --force && \
     echo "104.16.19.35 registry.npmjs.org" >> /etc/hosts && \
     npm install
 
-#COPY . .
+COPY . .
 
-ENTRYPOINT "npm run test"
+CMD "npm run test"
